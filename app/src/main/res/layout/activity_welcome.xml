@@ -7,7 +7,7 @@
     tools:context="android.swiper.cena.ch.cenaswiper.swiper">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -16,11 +16,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Max Mustermann"
         android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/startBtn"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="Name" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/startBtn"
@@ -31,11 +33,11 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:elevation="12dp"
-        android:onClick="startSwiper"
+        android:onClick="startLogin"
         android:text="Start!"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUserName"
         app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintLeft_toRightOf="@+id/editText"
+        app:layout_constraintLeft_toRightOf="@+id/txtUserName"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
@@ -45,7 +47,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="Please tell us something about you. :"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="16dp" />
